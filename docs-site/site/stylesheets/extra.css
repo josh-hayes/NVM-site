@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --md-text-font: "Inter";
+
+  --md-primary-fg-color: #0b4370;
+  --md-primary-fg-color--light: #0f5e9c;
+  --md-primary-fg-color--dark: #072f4d;
+
+  --md-accent-fg-color: #c85d31;
+  --md-accent-fg-color--transparent: rgba(200, 93, 49, 0.12);
+}
+
+.md-header__button.md-logo img {
+  height: 48px;
+  margin-right: 8px;
+}
+
+/* Optional: tighten the brand feel a little */
+.md-header__title {
+  font-weight: 700;
+}
+
+.md-typeset a {
+  color: #0b4370;
+}
+
+.md-typeset a:hover {
+  color: #072f4d;
+}
+
+.md-typeset .md-button--primary {
+  background-color: #0b4370;
+  border-color: #0b4370;
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: #072f4d;
+  border-color: #072f4d;
+}
+
+/* Optional: make headings feel a bit more like the main site */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
