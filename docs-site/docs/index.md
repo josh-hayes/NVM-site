@@ -50,11 +50,23 @@ The model is designed to evolve over time, incorporating additional hazards, ass
 
 ## Current scope
 
-The current implementation of the NVM focuses primarily on **volcanic ashfall impacts on buildings**, using probabilistic hazard modelling and vulnerability relationships to estimate damage and loss.
+The current implementation of the NVM focuses primarily on **volcanic ashfall impacts on buildings**, using probabilistic hazard modelling, national building exposure information, and vulnerability relationships to estimate damage and loss.
+
+The first technical implementation is documented in:
+
+> Hayes, J.L.; Williams, J.H.; Magill, C.R.; O'Leary, T.M.; Bebbington, M.; Wilson, T.M.; Leonard, G.S.; Fitzgerald, R.H.; Craig, H.; Lindsay, J. 2026. *National Volcano Model: Probabilistic volcanic ash building damage*. GNS Science report 2026/21. DOI: [10.21420/NSEH-1881](https://doi.org/10.21420/NSEH-1881).
+
+This ashfall-focused component brings together:
+
+- Probabilistic eruption occurrence and magnitude information
+- Ashfall hazard modelling using Tephra2
+- A national building exposure dataset
+- New Zealand-specific building vulnerability models developed through structured expert elicitation
+- Probabilistic estimates of building damage, repair cost, average annual loss, and loss exceedance probability
 
 This provides a foundational capability that can be expanded to include:
 
-- Additional hazards (e.g., pyroclastic density currents, lava flows)  
+- Additional hazards, including volcanic mass-flow hazards such as pyroclastic density currents, lahars, and lava flows
 - Infrastructure systems (e.g., transport, power, water)  
 - Broader societal impacts and disruption  
 

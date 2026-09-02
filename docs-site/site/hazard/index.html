@@ -567,16 +567,27 @@
 
 
 <h1 id="hazard">Hazard</h1>
-<p>The hazard component describes volcanic processes. There are three critical components to hazard:  </p>
+<p>The hazard component describes the volcanic processes that may affect exposed assets. In the current NVM implementation, the primary hazard is <strong>volcanic ashfall</strong> from New Zealand volcanoes.</p>
+<p>There are three critical components to hazard:</p>
 <ul>
 <li>Probability  </li>
 <li>Hazard Intensity  </li>
 <li>Spatial extent  </li>
 </ul>
+<p>For volcanic ashfall, the hazard intensity measure is commonly represented using ash thickness or loading. These measures are important because they can be related to building damage mechanisms such as roof loading, ash ingress, abrasion, corrosion, and cleanup requirements.</p>
 <h2 id="probabilistic">Probabilistic</h2>
-<p>Coming soon.</p>
+<p>The NVM uses a probabilistic approach rather than a single deterministic eruption scenario. This means the model represents many possible volcanic futures, including uncertainty in eruption occurrence, eruption magnitude, wind conditions, ash dispersal, and resulting ashfall footprints.</p>
+<p>In the ashfall building damage report, probabilistic eruption occurrence and magnitude information is combined with ashfall hazard modelling to estimate the likelihood of ashfall intensities at locations across New Zealand. This supports outputs such as:</p>
+<ul>
+<li>Spatial variation in ashfall risk</li>
+<li>Contributions from different volcanic sources</li>
+<li>Loss exceedance probabilities</li>
+<li>Average annual loss estimates</li>
+</ul>
+<p>The probabilistic framing allows results to be compared consistently across regions and volcanic sources, while keeping uncertainty explicit.</p>
 <h2 id="multi-hazard-eruption-scenarios">Multi-hazard eruption scenarios</h2>
-<p>Coming soon.</p>
+<p>The current national implementation focuses on ashfall building damage. However, volcanic eruptions can produce multiple hazards, including ashfall, pyroclastic density currents, lahars, lava flows, debris flows, ballistic projectiles, and gas emissions.</p>
+<p>The NVM is designed to evolve toward multi-hazard volcanic risk assessment. The 2026 report notes that fragility functions were also developed for building damage from volcanic mass-flow hazards, although these were not applied in the ashfall-focused national loss analysis. These functions provide a starting point for future model components that represent hazards beyond ashfall.</p>
 
 
 

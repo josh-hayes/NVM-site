@@ -420,6 +420,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ashfall-building-damage-and-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ashfall building damage and loss
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncertainty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uncertainty
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -527,6 +549,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ashfall-building-damage-and-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ashfall building damage and loss
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncertainty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uncertainty
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -548,6 +592,27 @@
 <p>Impact and risk models combine hazard, exposure, and vulnerability.</p>
 <h2 id="framework">Framework</h2>
 <p>Risk = Hazard × Exposure × Vulnerability</p>
+<p>Within the NVM, these components are interpreted as:</p>
+<ul>
+<li><strong>Hazard</strong>: the probability, intensity, and spatial footprint of volcanic hazards such as ashfall</li>
+<li><strong>Exposure</strong>: the buildings, infrastructure, land uses, or other assets located in places that may be affected</li>
+<li><strong>Vulnerability</strong>: the expected response of those assets when exposed to a given hazard intensity</li>
+</ul>
+<p>The current ashfall building implementation combines probabilistic ashfall hazard, national building exposure, and New Zealand-specific building vulnerability models to estimate damage and financial loss.</p>
+<h2 id="ashfall-building-damage-and-loss">Ashfall building damage and loss</h2>
+<p>The 2026 NVM report presents the first national probabilistic assessment of volcanic ash risk to New Zealand buildings. The model estimates risk by running ashfall hazard information through building vulnerability relationships and loss calculations.</p>
+<p>Key risk metrics include:</p>
+<ul>
+<li>Damage probabilities for representative building types</li>
+<li>Repair cost estimates</li>
+<li>Average annual loss</li>
+<li>Loss exceedance probabilities</li>
+<li>Regional and volcanic-source contributions to national risk</li>
+</ul>
+<p>These outputs are intended to support consistent comparison across regions and volcanic sources. They are most useful for strategic planning, resilience investment, emergency management preparedness, and financial risk assessment.</p>
+<h2 id="uncertainty">Uncertainty</h2>
+<p>Uncertainty is a central part of the NVM framework. It arises from hazard modelling, eruption occurrence and magnitude assumptions, building exposure information, vulnerability relationships, and loss modelling assumptions.</p>
+<p>The current implementation explicitly incorporates uncertainty in building response through expert elicitation and calibrated aggregation. Results should therefore be interpreted as probabilistic estimates rather than precise predictions for a future eruption.</p>
 
 
 
